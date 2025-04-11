@@ -1,10 +1,10 @@
-/* General Styles */
-body {
- font-family: sans-serif;
- margin: 0;
- padding: 0;
- box-sizing: border-box;
+:root {
+  --font-family: "Rubik", sans-serif;
 }
+body {
+  font-family: var(--font-family);
+}
+
 
 /* Header Styles */
 header {
@@ -18,14 +18,15 @@ nav {
  align-items: center;
  max-width: 1200px;
  margin: 0 auto;
+ 
 }
 
 nav .logo {
  font-size: 1.5em;
  font-weight: bold;
- display: flex;                    /* Включаем Flexbox */
-    justify-content: space-between;          /* Горизонтальное центрирование */
-    align-items: center;
+ display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 nav ul {
@@ -50,10 +51,10 @@ nav .auth a {
 }
 
 nav .auth button {
-  background-color: transparent; /* Делаем фон прозрачным */
+  background-color: transparent;
   color: #ff0000;   
-  font-weight: bold;           /* Красный цвет текста */
-  border: 2px solid #ff0000;       /* Красный контур */
+  font-weight: bold;
+  border: 2px solid #ff0000;       
   padding: 10px 20px;
   border-radius: 20px;
   cursor: pointer;
@@ -89,15 +90,18 @@ nav .auth button {
 }
 
 .hero-content button {
- background-color: #ff0000;
+ background: #f53838;
+ border-radius: 10px;
+ width: 250px;
+ height: 60px;
  color: white;
  border: none;
  padding: 15px 30px;
- border-radius: 5px;
- cursor: pointer;
- font-size: 1.1em;
+ font-family:sans-serif;
+ font-weight: 700;
+ font-size: 16px;
+ line-height: 156%;
 }
-
 .hero-image {
  flex: 1;
 }
@@ -124,8 +128,8 @@ nav .auth button {
 }
 
 .stat-card img {
- width: 55px; /* Задайте нужную ширину иконкам */
-  height: auto; /* Автоматическая высота для сохранения пропорций */
+ width: 55px;
+  height: auto;
   margin-bottom: 5px;
   padding: 5px;
 }
@@ -139,56 +143,57 @@ nav .auth button {
   font-weight: bold;
 }
 
-/* Features Section */
 .features {
- display: flex;
- align-items: center;
- justify-content: space-between;
- max-width: 1200px;
- margin: 40px auto;
- padding: 20px;
+  display: flex;
+  align-items: flex-end; /* Выравнивание элементов по нижней линии */
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  gap: 150px;
 }
 
 .features-image {
- flex: 1;
+  flex: 1;
 }
 
 .features-image img {
- width: 100%;
- height: auto;
+  width: 100%;
+  height: auto;
+  
 }
 
 .features-content {
- flex: 1;
- padding-left: 20px;
+  flex: 1;
+  padding-left: 20px;
+  
 }
 
 .features-content h2 {
- font-size: 2em;
- margin-bottom: 20px;
+  font-size: 2em;
+  margin-bottom: 20px;
 }
 
 .features-content p {
- font-size: 1.1em;
- line-height: 1.6;
- margin-bottom: 30px;
+  font-size: 1.1em;
+  line-height: 1.6;
+  margin-bottom: 30px;
 }
 
 .features-content ul {
- list-style: none;
- padding: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .features-content ul li {
- margin-bottom: 10px;
- display: flex;
- align-items: center;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
 }
-.features-content ul li img {
-  margin-right: 10px;
- }
 
-/* Pricing Section */
+
+
 .pricing {
  text-align: center;
  max-width: 1200px;
@@ -201,7 +206,7 @@ nav .auth button {
  margin-bottom: 20px;
 }
 .pricing-card ul li img {
-  margin-right: 12px;
+  margin-right: 15px;
 }
 
 .pricing p {
@@ -211,53 +216,86 @@ nav .auth button {
 }
 
 .pricing-cards {
- display: flex;
- justify-content: space-around;
+  display: flex;
+  justify-content: space-around; /* Расположить карточки равномерно */
+  max-width: 1200px;
+  margin: 40px auto;
 }
 
 .pricing-card {
- border: 1px solid #ddd;
- border-radius: 10px;
- padding: 20px;
- margin: 25px;
- width: 30%;
- text-align: left;
-}
-
-.pricing-card.featured {
- border-color: #ff0000;
+  display: flex;
+  flex-direction: column; /* Расположение элементов по вертикали */
+  align-items: center; /* Центрировать элементы по горизонтали */
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 30px 20px; /* Добавить отступы */
+  margin: 25px;
+  width: 30%;
+  height: 600px; /* Присвоить одинаковую высоту всем карточкам */
 }
 
 .pricing-card h3 {
- font-size: 1.5em;
- margin-bottom: 20px;
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 .pricing-card ul {
- list-style: none;
- padding: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
 }
 
 .pricing-card ul li {
- margin-bottom: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
 }
 
 .pricing-card p {
- font-size: 1.5em;
- font-weight: bold;
- text-align: center;
- margin-top: 20px;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+  margin-top: auto; /* Позиционировать цену сверху кнопки */
 }
 
 .pricing-card button {
- background-color: #ff0000;
- color: white;
- border: none;
- padding: 10px 20px;
- border-radius: 5px;
- cursor: pointer;
- width: 100%;
- margin-top: 20px;
+  font-weight: 700;
+  font-size: 16px;
+  color: #f53838;
+  font-family: sans-serif;
+  border: 2px solid #f53838;
+  border-radius: 50px;
+  width: 177px;
+  height: 45px;
+  background-color: #ffffff;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-bottom: 30px; 
+}
+.pricing-card1 button {
+  font-weight: 700;
+  font-size: 16px;
+  color: #ffffff;
+  font-family: sans-serif;
+  border: none;
+  border-radius: 50px;
+  width: 177px;
+  height: 45px;
+  background-color: #f53838;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-bottom: 30px; 
+}
+.pricing-card > *:not(ul) {
+  margin-bottom: 20px;
+}
+
+.pricing-card > ul {
+  flex-grow: 1;
 }
 
 /* Network Section */
@@ -269,17 +307,29 @@ nav .auth button {
 }
 
 .network h2 {
- font-size: 2em;
- margin-bottom: 20px;
+  font-size: 35px;
+  line-height: 143%;
+  text-align: center;
+  color: #0b132a;
+  width: 380px;
+  margin: auto;
 }
 
 .network p {
- font-size: 1.1em;
- line-height: 1.6;
- margin-bottom: 30px;
+  font-weight: 400;
+  width: 555px;
+  margin: auto;
+  font-size: 18px;
+  line-height: 187%;
+  text-align: center;
+  color: #4f5665;
+}
+.network span{
+  font-weight: bold;
 }
 
 .network img {
+  margin-top: 150px;
  width: 100%;
  height: auto;
 }
@@ -294,7 +344,7 @@ nav .auth button {
 }
 
 .brands img {
- width: 80px;
+ width: 1100px;
  height: auto;
 }
 
