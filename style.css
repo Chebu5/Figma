@@ -1,13 +1,21 @@
-:root {
-  --font-family: "Rubik", sans-serif;
-}
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
 body {
-  font-family: var(--font-family);
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 500;
+  color: #0B132A;
 }
 
+.features-stats .stat-card span {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: #4F5665;
+}
 
-/* Header Styles */
 header {
   background-color: #fff;
   padding: 20px;
@@ -19,7 +27,6 @@ nav {
   align-items: center;
   max-width: 1200px;
   margin: 0 auto;
-
 }
 
 nav .logo {
@@ -30,6 +37,10 @@ nav .logo {
   align-items: center;
 }
 
+nav .logo svg {
+  margin-right: 7px;
+}
+
 nav ul {
   display: flex;
   list-style: none;
@@ -37,11 +48,16 @@ nav ul {
   margin: 0;
 }
 
-nav ul li a {
-  display: block;
-  padding: 10px 15px;
-  text-decoration: none;
-  color: #333;
+nav ul li p {
+  width: auto;
+  height: 19px;
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  margin-left: 40px;
+  line-height: 19px;
+  color: #4F5665;
 }
 
 nav .auth a {
@@ -52,15 +68,20 @@ nav .auth a {
 }
 
 nav .auth button {
-  background-color: transparent;
-  color: #ff0000;
-  font-weight: bold;
-  border: 2px solid #ff0000;
-  padding: 10px 20px;
-  border-radius: 20px;
-  cursor: pointer;
-  font-size: 1em;
+
+  box-sizing: border-box;
+
   width: 150px;
+  height: 45px;
+  border: 1px solid #F53855;
+  border-radius: 50px;
+  background-color: #ffffff;
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #F53855;
 }
 
 
@@ -82,12 +103,28 @@ nav .auth button {
 .hero-content h1 {
   font-size: 2.5em;
   margin-bottom: 20px;
+  width: 555px;
+  height: 140px;
+  left: 150px;
+  top: 206.77px;
+
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 70px;
+  color: #0B132A;
 }
 
 .hero-content p {
-  font-size: 1.2em;
   line-height: 1.6;
   margin-bottom: 30px;
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: #4F5665;
 }
 
 .hero-content button {
@@ -95,13 +132,14 @@ nav .auth button {
   border-radius: 10px;
   width: 250px;
   height: 60px;
-  color: white;
-  border: none;
-  padding: 15px 30px;
-  font-family: sans-serif;
+  font-family: 'Rubik';
+  font-style: normal;
   font-weight: 700;
   font-size: 16px;
-  line-height: 156%;
+  line-height: 25px;
+  color: #FFFFFF;
+  border: none;
+  box-shadow: 0px 15px 30px rgba(255, 42, 0, 0.3);
 }
 
 .hero-image {
@@ -131,19 +169,29 @@ nav .auth button {
 
 .stat-card img {
   width: 55px;
-  height: auto;
+  height: 55px;
   margin-bottom: 5px;
-  padding: 5px;
+
 }
 
 .stat-card p {
-  margin: 18px;
-  font-size: 1.2em;
-  text-align: left;
+  text-align: start;
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  color: #0B132A;
+  margin-left: 36.5px;
 }
 
 .stat-card p span {
-  font-weight: bold;
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #4F5665;
 }
 
 .features {
@@ -151,8 +199,8 @@ nav .auth button {
   align-items: flex-end;
   justify-content: space-between;
   max-width: 1200px;
-  margin: 40px auto;
-  padding: 20px;
+  margin:auto;
+
   gap: 150px;
 }
 
@@ -172,15 +220,28 @@ nav .auth button {
 
 }
 
-.features-content h2 {
+.features-content h3 {
   font-size: 2em;
   margin-bottom: 20px;
+  width: 383.41px;
+  height: 100px;
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 50px;
+  color: #0B132A;
 }
 
 .features-content p {
-  font-size: 1.1em;
-  line-height: 1.6;
-  margin-bottom: 30px;
+  width: 427.88px;
+  height: 60px;
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: #4F5665;
 }
 
 .features-content ul {
@@ -190,13 +251,22 @@ nav .auth button {
 }
 
 .features-content ul li {
-  margin-bottom: 10px;
   display: flex;
-  align-items: center;
+  text-align: left;
+  
 }
 
-
-
+.features-content ul li p {
+  width: auto;
+  height: 30px;
+  margin-left: 12px;
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  color: #4F5665;
+}
 .pricing {
   text-align: center;
   max-width: 1200px;
@@ -205,8 +275,18 @@ nav .auth button {
 }
 
 .pricing h2 {
-  font-size: 2em;
-  margin-bottom: 20px;
+  margin: auto;
+  width: 383.41px;
+  height: 50px;
+  left: 528.3px;
+  top: 1586.55px;
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 50px;
+  text-align: center;
+  color: #0B132A;
 }
 
 .pricing-card ul li img {
@@ -214,9 +294,18 @@ nav .auth button {
 }
 
 .pricing p {
-  font-size: 1.1em;
-  line-height: 1.6;
-  margin-bottom: 30px;
+  width: 555px;
+  height: 60px;
+  left: 442.5px;
+  top: 1656.55px;
+  margin: auto;
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  text-align: center;
+  color: #4F5665;
 }
 
 .pricing-cards {
@@ -224,9 +313,11 @@ nav .auth button {
   justify-content: space-around;
   max-width: 1200px;
   margin: 40px auto;
+  
 }
 
 .pricing-card {
+  height: 760px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -235,40 +326,60 @@ nav .auth button {
   padding: 30px 20px;
   margin: 25px;
   width: 30%;
-  height: 600px;
 }
 
 .pricing-card h3 {
-  font-size: 1.5em;
-  margin-bottom: 20px;
+  width: 123px;
+  height: 30px;
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 30px;
   text-align: center;
+
+  color: #0B132A;
+
+
 }
 
 .pricing-card ul {
   list-style: none;
   padding: 0;
   margin: 0;
-  text-align: left;
 }
 
 .pricing-card ul li {
-  margin-bottom: 10px;
   display: flex;
-  align-items: center;
+  text-align: left;
+  margin-top: 10px;
+}
+
+.pricing-card ul li p {
+  width: auto;
+  height: 30px;
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  color: #4F5665;
+  margin: 0;
 }
 
 .pricing-card p {
-  font-size: 1.5em;
-  font-weight: bold;
+  width: 120px;
+  height: 30px;
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 30px;
   text-align: center;
-  margin-top: auto;
+  color: #0B132A;
 }
 
 .pricing-card button {
-  font-weight: 700;
-  font-size: 16px;
-  color: #f53838;
-  font-family: sans-serif;
   border: 3px solid #f53838;
   border-radius: 50px;
   width: 177px;
@@ -278,6 +389,12 @@ nav .auth button {
   cursor: pointer;
   margin-top: 10px;
   margin-bottom: 30px;
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #F53838;
 }
 
 .pricing-card1 {
@@ -289,15 +406,10 @@ nav .auth button {
   padding: 30px 20px;
   margin: 25px;
   width: 30%;
-  height: 600px;
+  height: 760px;
 }
 
 .pricing-card1 button {
-  font-weight: 700;
-  font-size: 16px;
-  color: #ffffff;
-  font-family: sans-serif;
-  border: none;
   border-radius: 50px;
   width: 177px;
   height: 45px;
@@ -306,6 +418,14 @@ nav .auth button {
   cursor: pointer;
   margin-top: 10px;
   margin-bottom: 30px;
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 25px;
+  color: #FFFFFF;
+  border: none;
+  box-shadow: 0px 15px 30px rgba(255, 42, 0, 0.3);
 }
 
 .pricing-card>*:not(ul) {
@@ -325,11 +445,16 @@ nav .auth button {
 }
 
 .network h2 {
+
+  width: 383.41px;
+  height: 100px;
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 500;
   font-size: 35px;
-  line-height: 143%;
+  line-height: 50px;
   text-align: center;
-  color: #0b132a;
-  width: 380px;
+  color: #0B132A;
   margin: auto;
 }
 
@@ -371,63 +496,94 @@ nav .auth button {
 /* Testimonials Section */
 .testimonials {
   text-align: center;
-  max-width: 1200px;
-  margin:auto;
-  padding: 20px;
-  
+  max-width: auto;
 }
 
 .testimonials h2 {
-  font-size: 2em;
-  margin-bottom: 20px;
-  width: 447px;
+  width: 447.81px;
+  height: 100px;
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 50px;
   text-align: center;
-  color: #0b132a;
+  color: #0B132A;
   margin: auto;
 }
 
 .testimonials .intro-text {
+  width: 555px;
+  height: 60px;
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  text-align: center;
+  color: #4F5665;
   margin: auto;
   margin-top: 20px;
-  width: 555px;
-  font-size: 18px;
-  line-height: 187%;
-  text-align: center;
-  color: #4f5665;
 }
-.testimonials > div:last-child {
+
+.testimonials>div:last-child {
   margin-top: 41px;
   display: flex;
   gap: 15px;
-  
+
   justify-content: flex-start;
 }
 
 .testimonial-cards {
   display: flex;
-  justify-content: space-around;
-  
+  justify-content: center;
+  gap: 50px;
+  padding: 20px 0;
 }
-.testimonial-cards p{
+
+.testimonial1-card,
+.testimonial-card {
+  border-radius: 10px;
+  padding: 20px;
+  width: 400px;
+  text-align: left;
+  margin: 0;
+}
+
+.testimonial-cards p {
   line-height: 1.6;
   font-size: 18px;
 }
+
 .testimonial1-card {
   border: 3px solid #f53838;
-  border-radius: 10px;
-  padding: 20px;
-  margin: 25px;
-  width: 30%;
-  text-align: left;
 }
 
 .testimonial-card {
   border: 3px solid #ddd;
-  border-radius: 10px;
-  padding: 20px;
-  margin: 25px;
-  width: 30%;
-  text-align: left;
+}
+
+.testimonial-card p {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  color: #0B132A;
+}
+
+.testimonial1-card p {
+
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  color: #0B132A;
 }
 
 .user-row {
@@ -436,7 +592,6 @@ nav .auth button {
   gap: 12px;
 }
 
-/* Стили для верхней строки */
 .top-row {
   display: flex;
   justify-content: space-between;
@@ -447,24 +602,30 @@ nav .auth button {
 .rating {
   display: flex;
   align-items: center;
+  /* Выравнивание по вертикали */
   gap: 11px;
 }
 
 .rating p {
-  margin: 0;
-  font-weight: 600;
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
   font-size: 18px;
+  line-height: 30px;
+  color: #0B132A;
+  margin: 0;
+  /* Убираем лишние отступы */
 }
 
 .rating img {
   width: 18px;
   height: 18px;
-  position: relative;
+  vertical-align: middle;
+  /* Дополнительное выравнивание */
 }
 
 .user-row img {
   width: 50px;
-  /* Пример размера, подберите под ваш дизайн */
   height: 50px;
   border-radius: 50%;
 }
@@ -479,10 +640,39 @@ nav .auth button {
   font-size: 0.95em;
 }
 
+.btn-right {
+  background: #F53838;
+  border: 2px solid #F53838;
+  box-shadow: 0px 14px 44px rgba(14, 20, 34, 0.08);
+  color: #fff;
+  width: 60px;
+  height: 60px;
+  font-size: 25px;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+.btn-left {
+  margin-left: 885px;
+  border: 2px solid #F53838;
+  width: 60px;
+  height: 60px;
+  font-size: 25px;
+  background-color: #fff;
+  color: #F53838;
+  border-radius: 50%;
+}
+.marg {
+  margin-left: 390px;
+
+}
+
+.marg svg {
+  margin-left: 15px;
+}
 
 /* Subscribe Section */
 .subscribe {
-  background-color: #f9f9f9;
+
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -496,13 +686,29 @@ nav .auth button {
 }
 
 .subscribe-content h2 {
-  font-size: 2em;
-  margin-bottom: 20px;
+  width: 371.61px;
+  height: 80px;
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 45px;
+  display: flex;
+  align-items: center;
+  color: #0B132A;
 }
 
 .subscribe-content p {
-  font-size: 1.1em;
-  line-height: 1.6;
+  width: 410px;
+  height: 16px;
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  color: #4F5665;
 }
 
 .subscribe button {
@@ -510,13 +716,14 @@ nav .auth button {
   border-radius: 10px;
   width: 250px;
   height: 60px;
-  color: white;
-  border: none;
-  padding: 15px 30px;
-  font-family: sans-serif;
+  font-family: 'Rubik';
+  font-style: normal;
   font-weight: 700;
   font-size: 16px;
-  line-height: 156%;
+  line-height: 25px;
+  color: #FFFFFF;
+  border: none;
+  box-shadow: 0px 15px 30px rgba(255, 42, 0, 0.3);
 }
 
 
@@ -531,18 +738,49 @@ footer {
   max-width: 1200px;
   margin: 0 auto;
 }
-
-.footer-logo {
-  flex: 1;
-  font-size: 1.2em;
+.footer-logo p {
+width: 340px;
+height: 61.57px;
+font-family: 'Rubik';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 30px;
+color: #4F5665;
+margin-top: 26px;
 }
-
+.footer-logo h5 {
+width: auto;
+height: 24px;
+font-family: 'Rubik';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 24px;
+color: #0B132A;
+}
+.footer-logo svg {
+  margin-right: 7px;
+}
+.footer-logo img {
+  width: 80px;
+  height: 80px;
+}
 .footer-links {
   display: flex;
   justify-content: space-around;
   flex: 2;
 }
-
+.footer-links p{
+width: auto;
+height: 30px;
+font-family: 'Rubik';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 30px;
+color: #0B132A;
+}
 .footer-links ul {
   list-style: none;
   padding: 0;
@@ -550,7 +788,12 @@ footer {
 
 .footer-links ul li a {
   text-decoration: none;
-  color: #333;
-  display: block;
-  padding: 5px 0;
+width: 74px;
+height: 30px;
+font-family: 'Rubik';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 30px;
+color: #4F5665;
 }
